@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入vue3 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.2.37/vue.global.js"></script>
+    <title>伴生</title>
+</head>
+<body>
+
+    <dev id="app">
+       <!-- <dev v-text="name"></dev> 和 {{name}} 差不多！  -->
+        <dev v-text="name"></dev>
+       <!--  <dev v-html="html"></dev> 一般不使用  容易发生脚本注入 -->
+    </dev>
+
+
+    <script src="demo2.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入vue3 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.2.37/vue.global.js"></script>
+    <title>伴生</title>
+</head>
+<body>
+
+    <dev id="app">
+        <!--  这个ID的值，可以随时变 -->
+        <!--  这里可使用不加冒号的bind -->
+        <dev v-bind:id="test"></dev>
+        <dev :id="dd"></dev>
+
+        <!-- 三木运算符！ -->
+        {{n==1? 'aaa':'bbb'}}
+
+        <dev v-show="true">aaa</dev>
+        <dev v-once="true">aaa</dev>
+
+        <dev :[arg]="test">666</dev>
+
+    </dev>
+
+
+    <script src="demo2.js"></script>
+</body>
+</html>
