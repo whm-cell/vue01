@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入vue3 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.2.37/vue.global.js"></script>
+    <title>伴生</title>
+</head>
+<body>
+
+    <dev id="app">
+        <dev v-on:click="changeName">{{name}}</dev>
+        <br>
+        <dev @click="changeName">{{name}}</dev>
+
+        <a href="www.baidu.com" @click ="go($event,'王海明')">aaa</a>
+        <br>
+        <br><br>
+
+
+
+        <button @click="add">点击</button>
+        <button @click="reduce">减少</button>
+        <dev>{{error2}}</dev>
+
+        <!-- <dev v-text="error"></dev> -->
+    </dev>
+
+
+    <script src="demo2.js"></script>
+</body>
+</html>
