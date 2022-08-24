@@ -1,12 +1,19 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
+
+import zujian1 from './components/zujian1.vue'
+
+import list from './components/list.vue'
+
 export default {
   components: {
-    // HelloWorld
+
+    // 引过来的  比如放到这 才可以用
+   //  zujian1
+    list
   },
   data() {
     return {
-      msg: '牛逼'
     }
   },
   methods: {
@@ -20,23 +27,16 @@ export default {
 
 <template>
   <div class="App">
-    <div class="App-header">
-      <h2 class="demoa demob">{{ msg }}</h2>
-    </div>
-    <button @click="handleClick">点击</button>
+    <!--
+        1. 引用组件写法1
+        <zujian1  />
+        2. 写法2
+            驼峰命名法
+            <zujian1  />
+     -->
+    <list />
   </div>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+<style>
 </style>
