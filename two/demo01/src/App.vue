@@ -4,13 +4,15 @@
 import zujian1 from './components/zujian1.vue'
 
 import list from './components/list.vue'
+import arraydemoVue from './components/array/arraydemo.vue'
 
 export default {
   components: {
 
     // 引过来的  比如放到这 才可以用
    //  zujian1
-    list
+    // list
+    arraydemoVue
   },
   data() {
     return {
@@ -34,7 +36,8 @@ export default {
             驼峰命名法
             <zujian1  />
      -->
-    <list />
+    <!-- <list /> -->
+    <arraydemo-vue/>
   </div>
 </template>
 
