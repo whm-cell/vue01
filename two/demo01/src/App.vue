@@ -5,6 +5,8 @@ import zujian1 from './components/zujian1.vue'
 
 import list from './components/list.vue'
 import arraydemoVue from './components/array/arraydemo.vue'
+import eventDemo from './components/event/eventDemo.vue'
+import formdemo from './components/表单操作/formdemo.vue'
 
 export default {
   components: {
@@ -12,7 +14,9 @@ export default {
     // 引过来的  比如放到这 才可以用
    //  zujian1
     // list
-    arraydemoVue
+    // arraydemoVue,
+    // eventDemo,
+    formdemo
   },
   data() {
     return {
@@ -37,7 +41,12 @@ export default {
             <zujian1  />
      -->
     <!-- <list /> -->
-    <arraydemo-vue/>
+    <!-- <arraydemo-vue/> -->
+    <!-- <event-demo/>
+     <hr/> -->
+      <formdemo/>
+
+
   </div>
 </template>
 
